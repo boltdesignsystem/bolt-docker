@@ -22,8 +22,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     nasm \
 #    libjpeg-dev \
 #    libpng-dev \
-#    libpng16-16 && \
-    rm -rf /var/lib/apt/lists/*
+#    libpng16-16 \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 
