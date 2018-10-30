@@ -78,4 +78,4 @@ RUN sudo apt-get update && sudo apt-get install yarn
 RUN mkdir ~/.ssh && touch ~/.ssh_config
 
 # Display versions installed
-RUN php -v && composer --version && node -v && npm -v && yarn -v && ansible --version
+RUN php -v && composer --version && node -v && npm -v && yarn -v 
