@@ -46,8 +46,8 @@ RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && apt-get update && ap
 #    php7.2-imap \
 #    php7.2-imagick \
 #    php-xdebug \
-#    php-memcached && \
-    rm -rf /var/lib/apt/lists/* && \
+#    php-memcached \
+    && rm -rf /var/lib/apt/lists/* && \
     command -v php
 
 # Composer
