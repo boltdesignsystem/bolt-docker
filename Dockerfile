@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 #    rsync \
 #    ssh \
 #    openssh-client \
-#    git \
+    git \
     build-essential \
     apt-utils \
     software-properties-common \
