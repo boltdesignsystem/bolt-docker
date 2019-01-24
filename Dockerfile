@@ -95,4 +95,6 @@ RUN mv composer.phar /usr/local/bin/composer && \
     composer self-update --preview
 RUN command -v composer
 
+RUN composer global require hirak/prestissimo
+
 ENTRYPOINT ["dumb-init", "--"]
