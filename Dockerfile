@@ -84,9 +84,10 @@ RUN apt-get update \
     && rm -f dumb-init_*.deb \
     && apt-get clean \
     && apt-get autoremove -y \
-    && rm -rf /var/lib/apt/lists/* \
-    && yarn global add puppeteer@1.11.0 \
-    && yarn cache clean
+    && rm -rf /var/lib/apt/lists/*
+    
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php
